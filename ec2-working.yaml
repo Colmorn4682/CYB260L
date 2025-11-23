@@ -6,8 +6,8 @@ Parameters:
     Default: "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
 Resources:
   Ec2Instance:
-   Type: AWS::EC2::Instance
-   Properties:
+    Type: AWS::EC2::Instance
+    Properties:
       ImageId: !Ref LatestAmiId
       KeyName: !Ref AWS::AccountId
       InstanceType: t2.micro
